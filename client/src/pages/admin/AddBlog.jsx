@@ -54,6 +54,7 @@ const AddBlog = () => {
       quillRef.current = new Quill(editorRef.current, {theme: 'snow', 
         modules: {
           toolbar: [
+            [{ 'size': [] }],
             ['bold', 'italic', 'underline', 'strike'],
             [{'list': 'ordered'}, {'list': 'bullet'}],
             [{'align': []}],
