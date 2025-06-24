@@ -33,8 +33,10 @@ const AddBlog = () => {
         toast.success(data.message);
         setImage(false)
         setTitle('')
+        setSubTitle('')
         quillRef.current.root.innerHTML = ''
         setCategory('Appetizer')
+        setIsPublished(false)
       }else{
         toast.error(data.message)
       }
@@ -47,12 +49,20 @@ const AddBlog = () => {
     
   }
 
-
   useEffect(()=>{
     if(!quillRef.current && editorRef.current){
-      quillRef.current = new Quill(editorRef.current, {theme: 'snow'})
+      quillRef.current = new Quill(editorRef.current, {theme: 'snow', 
+        modules: {
+          toolbar: [
+            ['bold', 'italic', 'underline', 'strike'],
+            [{'list': 'ordered'}, {'list': 'bullet'}],
+            ['link', 'image'],
+            ['clean']
+          ]
+        }})
     }
   },[])
+
   return (
     <form onSubmit={onSubmitHandler} className='flex-1 bg-blue-50/50 text-gray-600 h-full overflow-scroll'>
       <div className='bg-white w-full max-w-3xl p-4 md:p-10 sm:m-10 shadow rounded'>
