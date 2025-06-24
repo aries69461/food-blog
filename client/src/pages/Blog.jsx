@@ -89,7 +89,6 @@ const blog = () => {
                   <p className='font-medium'>{item.name}</p>
                 </div>
                 <p className='text-sm max-w-md ml-8'>{item.comment}</p>
-                {console.log("Comment content:", item.comment)}
                 <div className='absolute right-4 bottom-3 flex items-center gap-2 text-xs'>{Moment(item.createdAt).fromNow()}</div>
               </div>
             ))}

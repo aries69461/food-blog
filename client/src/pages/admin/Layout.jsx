@@ -8,10 +8,13 @@ const Layout = () => {
 
     const {axios, setToken, navigate} = useAppContext()
     const logout = ()=>{
-      localStorage.removeItem('token');
-      axios.defaults.headers.common['Authorization'] = null;
-      setToken(null)
-     navigate('/')   
+      const confirmLogout = window.confirm('Are you sure you want to log out?');
+      if(confirmLogout){
+        localStorage.removeItem('token');
+        axios.defaults.headers.common['Authorization'] = null;
+        setToken(null)
+        navigate('/')
+      }
     }
 
   return (
