@@ -24,7 +24,7 @@ const BlogTableItem = ({blog, fetchBlogs, index}) => {
         toast.error(error.message)
       }
     }
-
+ 
     const togglePublish = async()=>{
       try {
         const {data} = await axios.post('/api/blog/toggle-publish', {id: blog._id})
