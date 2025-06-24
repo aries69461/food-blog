@@ -88,7 +88,7 @@ const AddBlog = () => {
           </div>
         </div>
 
-        <p className='mt-6'>Blog Category</p>
+        <p className='mt-8'>Blog Category</p>
         <select onChange={e => setCategory(e.target.value)} name="category" className='mt-2 px-3 py-2 border text-gray-500 border-gray-300 outline-none rounded'>
           <option value="">Select Category</option>
           {blogCategories.map((item, index)=>{
