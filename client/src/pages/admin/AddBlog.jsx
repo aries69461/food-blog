@@ -57,7 +57,7 @@ const AddBlog = () => {
             ['bold', 'italic', 'underline', 'strike'],
             [{'list': 'ordered'}, {'list': 'bullet'}],
             [{'align': []}],
-            [{'background': []}],
+            [{'color': []}, {'background': []}],
             ['link', 'image'],
             ['clean']
           ]
