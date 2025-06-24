@@ -56,6 +56,8 @@ const AddBlog = () => {
           toolbar: [
             ['bold', 'italic', 'underline', 'strike'],
             [{'list': 'ordered'}, {'list': 'bullet'}],
+            [{'align': []}],
+            [{'background': []}],
             ['link', 'image'],
             ['clean']
           ]
