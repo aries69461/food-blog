@@ -20,8 +20,8 @@ const Header = () => {
   return (
     <div className='mx-8 sm:mx-16 xl:mx-24 relative'>
       <div className='text-center mt-20 mb-8'>
-        <h1 className='text-3xl sm:text-6xl font-semibold sm:leading-16 text-gray-700'><span className='text-primary'>Large:</span> <br /> Big Flavors, <br /> Bigger Experiences.</h1>
-        <p className='my-6 sm:my-8 max-w-2xl m-auto max-sm-text-xs text-gray-500'>Get ready to embark on a culinary journey where every dish tells a story, and every bite is an adventure. From hearty home-cooked meals to exciting global cuisines, we're here to satisfy your largest cravings and expand your culinary horizons. Dive in and discover your next favorite meal!</p>
+        <h1 className='text-3xl sm:text-6xl font-semibold sm:leading-16 text-gray-700'><span className='text-primary'>KC Fitness Gym</span> <br /> Train with heart. <br /> Live with purpose.</h1>
+        <p className='my-6 sm:my-8 max-w-2xl m-auto max-sm-text-xs text-gray-500'>You've got this! Every rep, every step, and every workout brings you closer to your goals. It's not about being perfect; it's about being consistent. Embrace the challenge, celebrate your progress, and remember why you started. We're here to help you every step of the way. Let's make today count!</p>
         <form onSubmit={onSubmitHandler} className='flex justify-between max-w-lg max-sm:scale-75 mx-auto border border-gray-300 bg-white rounded overflow-hidden'>
             <input ref={inputRef} type="text" placeholder='Search for recipes' required className='w-full pl-4 outline-none'/>
             <button type='submit' className='bg-primary text-white px-8 py-2 m-1.5 rounded hover:scale-105 transition-all cursor-pointer'>Search</button>

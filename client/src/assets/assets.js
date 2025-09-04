@@ -58,7 +58,7 @@ export const assets = {
     dashboard_icon_3,
     dashboard_icon_4,
 }
-export const blogCategories = ['All', 'Appetizer', 'Salad', 'Bakery', 'Soup', 'Main Course', 'Dessert', 'Liquor', 'Beverage',]
+export const blogCategories = ['All', 'Appetizer', 'Salad', 'Bakery',]
 
 export const blog_data = [
     {
